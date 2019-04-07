@@ -13,7 +13,7 @@ int main()
     int ca, cb, cc, k;
     cin>>ca>>cb>>cc>>k;
 
-    //vector<long long> a, b, c; ´í½â£¬»áRE
+    //vector<long long> a, b, c; Â´Ã­Â½Ã¢Â£Â¬Â»Ã¡RE
     vector<long long> a(ca), b(cb), c(cc);
     for (int i=0; i<ca; i++) cin>>a[i];
     for (int i=0; i<cb; i++) cin>>b[i];
@@ -27,11 +27,11 @@ int main()
 
     vector<long long> ans;
     for (int i=0; i<tmp.size()&&i<k; i++)
-        for (int j = 0; j < cc; j++)
+        for (int j=0; j<cc; j++)
             ans.push_back(tmp[i] + c[j]);
     sort(ans.begin(), ans.end(), cmp);
 
-    for (int i = 0; i < k; i++)
+    for (int i=0; i<k; i++)
         cout << ans[i] << endl;
     return 0;
 }
